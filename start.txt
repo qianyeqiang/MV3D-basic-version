@@ -1,0 +1,6 @@
+训练(mv3d.sh中test部分注释掉)：
+./experiments/scripts/mv3d.sh gpu 0 ./data/pretrain_model/VGG_imagenet.npy kitti_train
+测试(mv3d.sh中train部分注释掉)：
+./experiments/scripts/mv3d.sh gpu 0 ./output/faster_rcnn_end2end/train/VGGnet_fast_rcnn_iter_50000.ckpt.meta kitti_test
+
+./experiments/scripts/mv3d.sh gpu 0 ./output/faster_rcnn_end2end/train/car50000/VGGnet_fast_rcnn_iter_50000.ckpt.meta kitti_test
